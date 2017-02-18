@@ -254,7 +254,7 @@ $(document).ready(function() {
     //$('#personalitySummary').append('<p class="base--p">' + summary.split('\n').join('</p><p class="base--p">') + '</p>');
     var type = summary.split('\n')[0];
     type = type.substring(0, type.length-3 );
-    $('#personalitySummary').append('<p class="base--p">あなたは ' + type + ' なフレンズなんだね！</p>');
+    $('#personalitySummary').append('<p class="base--p">あなたは ' + type + ' なフレンズなんだね！すごーい！</p>');
   }
 
   /**
