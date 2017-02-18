@@ -257,7 +257,7 @@ $(document).ready(function() {
     var str = 'あなたは「' + type + '」のフレンズなんだね！すごーい！';
     $('#personalitySummary').append('<p class="base--p">' + str +'</p>');
 
-    str += ' https://kemono.mybluemix.net/';
+    str += ' https://kemono.mybluemix.net/ #けものしんだん';
     twttr.widgets.createShareButton('/',
       document.getElementById('create-twitter-button'),
       {
