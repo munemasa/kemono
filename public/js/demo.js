@@ -258,8 +258,18 @@ $(document).ready(function() {
     $('#personalitySummary').append('<p class="base--p">' + str +'</p>');
 
     str += ' https://kemono.mybluemix.net/';
-    $('#personalitySummary').append(
-      '<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(str) +'" data-size="large">Tweet</a>');
+    twttr.widgets.createShareButton('/',
+      document.getElementById('create-twitter-button'),
+      {
+        count: 'none',
+        text: str,
+        size: 'large'
+      }).then(function (el) {
+        console.log("Button created.")
+      });
+
+    // $('#personalitySummary').append(
+    //   '<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(str) +'" data-size="large">Tweet</a>');
   }
 
   /**
