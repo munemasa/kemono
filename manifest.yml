@@ -1,6 +1,6 @@
 ---
 applications:
-- name: personality-insights-livedemo
+- name: kemonoshindan
   command: npm start
   path: .
   memory: 512M
