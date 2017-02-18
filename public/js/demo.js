@@ -268,8 +268,8 @@ $(document).ready(function() {
     $('input[name="twitter"]:first').trigger('click');
     $('input[name="text-sample"]:first').trigger('click');
     $('.tab-panels--tab:first').trigger('click');
-    //$('#your-twitter-panel .auth-form').show();
-    //$('#your-twitter-panel .analysis-form').hide();
+    $('#your-twitter-panel .auth-form').show();
+    $('#your-twitter-panel .analysis-form').hide();
     resetOutputs();
     selectDefaultLanguage();
   });
