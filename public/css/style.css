@@ -661,8 +661,8 @@ body {
   padding: 0.5em 1em;
   color: white;
   font-weight: bold;
-  background-color: #325c80;
-  border: 2px solid #325c80;
+  background-color: #e09f4f;
+  border: 2px solid #e09f4f;
   display: inline-block; }
   .base--button[type='submit']:hover, .base--button[type='submit']:focus,
   .base--STYLED button[type='submit']:hover,
