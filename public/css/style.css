@@ -1554,10 +1554,8 @@ pre[class*=" language-"] {
     border-bottom: 1px solid #f4f4f4; }
     @media (min-width: 768px) {
       .output-summary--left {
-        width: 57.44681%;
-        float: left;
         padding: 2rem;
-        border-right: 1px solid #f4f4f4; } }
+        } }
   .output-summary--right {
     padding: 1rem;
     margin-top: 0rem; }

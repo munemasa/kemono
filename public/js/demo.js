@@ -251,7 +251,8 @@ $(document).ready(function() {
     var textSummary = new TextSummary({ version: 'v3', locale: globalState.userLocale || OUTPUT_LANG});
     var summary = textSummary.getSummary(profile);
     $('#personalitySummary').empty();
-    $('#personalitySummary').append('<p class="base--p">' + summary.split('\n').join('</p><p class="base--p">') + '</p>');
+    //$('#personalitySummary').append('<p class="base--p">' + summary.split('\n').join('</p><p class="base--p">') + '</p>');
+    $('#personalitySummary').append('<p class="base--p">あなたは ' + summary.split('\n')[0] + ' なフレンズなんだね！</p>');
   }
 
   /**
@@ -401,7 +402,7 @@ $(document).ready(function() {
      if(lang == 'ar') sortArray = arSortLikely;
      return sortArray.indexOf(cpid);
   }
-  
+
   function cpIdSortingUnlikely(cpid, lang) {
      var sortArray;
      if(lang == 'en') sortArray = enSortUnlikely;
