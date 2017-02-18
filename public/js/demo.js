@@ -268,8 +268,8 @@ $(document).ready(function() {
     $('input[name="twitter"]:first').trigger('click');
     $('input[name="text-sample"]:first').trigger('click');
     $('.tab-panels--tab:first').trigger('click');
-    $('#your-twitter-panel .auth-form').show();
-    $('#your-twitter-panel .analysis-form').hide();
+    //$('#your-twitter-panel .auth-form').show();
+    //$('#your-twitter-panel .analysis-form').hide();
     resetOutputs();
     selectDefaultLanguage();
   });
@@ -736,7 +736,7 @@ $(document).ready(function() {
     $('#self-analysis-tab').trigger('click');
     $('#your-twitter-panel .auth-form').hide();
     $('#your-twitter-panel .analysis-form label').remove();
-    $('#your-twitter-panel .analysis-form').append([
+    $('#your-twitter-panel .analysis-form .__twitter_user_name').append([
       '<label class="base--inline-label input--radio" for="my-twitter">', '<img class="input--thumb" src="', TWITTER_USER.image || '/images/no-image.png',
       '">@',
       TWITTER_USER.handle,
