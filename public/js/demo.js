@@ -765,6 +765,7 @@ $(document).ready(function() {
   }
 
   function selectDefaultLanguage() {
+    return;
     if (['en', 'es', 'ja', 'ar'].indexOf(globalState.userLocale) >= 0) {
       $('#lang-' + globalState.userLocale).prop('checked', true).trigger('click');
     }
