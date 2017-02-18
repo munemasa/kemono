@@ -254,7 +254,7 @@ $(document).ready(function() {
     //$('#personalitySummary').append('<p class="base--p">' + summary.split('\n').join('</p><p class="base--p">') + '</p>');
     var type = summary.split('\n')[0];
     type = type.substring(0, type.length-3 );
-    var str = 'あなたは「' + type + '」なフレンズなんだね！すごーい！';
+    var str = 'あなたは「' + type + '」のフレンズなんだね！すごーい！';
     $('#personalitySummary').append('<p class="base--p">' + str +'</p>');
 
     str += ' https://kemono.mybluemix.net/';
