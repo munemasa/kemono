@@ -20,7 +20,7 @@ var markdown = function(s) {
   return window.markdownit().render(s);
 };
 
-var OUTPUT_LANG = 'en';
+var OUTPUT_LANG = 'ja';
 
 var globalState = {
   twitterUserId: undefined,
