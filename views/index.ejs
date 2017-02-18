@@ -21,6 +21,9 @@
       <p class="base--p">
         <$= __("intro-1") $>
       </p>
+      <p class="base--p">
+        <$= __("intro-2") $>
+      </p>
 
       <div id="your-twitter-panel">
         <form class="input--form3 auth-form" method="get" action="/auth/twitter">
@@ -54,17 +57,7 @@
           </p>
         </div>
         <div class="output">
-          <p class="base--p">
-            <$= __("disclaimer-1") $>
-          </p>
-          <p class="base--p">
-            <a class="base--a" href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/inout.shtml#outputStats" target="_blank">
-              <$= __("disclaimer-2") $>
-            </a>
-            <$= __("disclaimer-3") $>
-          </p>
-          <h2 class="base--h2"><$= __("title-personality") $></h2>
-          <h4 class="base--h4 output--word-count-header"><span class="output--word-count-number">0</span> <$= __("label-wordsanalyzed") $>
+          <h4 style="display:none;">class="base--h4 output--word-count-header"><span class="output--word-count-number">0</span> <$= __("label-wordsanalyzed") $>
             <div class="output--word-count-message output--word-count-message_VERY-STRONG"><$= __("analysis-verystrong") $>
               <div class="output--word-count-tooltip_VERY-STRONG tooltip"><$= __("analysis-verystrong-desc") $></div>
             </div>
@@ -136,27 +129,6 @@
               <div class="output-values--traits output-stats-column--traits"></div>
             </div>
           </div>
-          <span class="icon-hyperlink output--json-hyperlink">
-            <span class="icon icon-code"></span>
-          <button class="base--a icon-hyperlink--button icon-hyperlink--button_BLANK output--json-button" href="">
-              <$= __("button-json") $>
-            </button>
-          </span>
-          <div class="output--json">
-            <h3 class="base--h3"><$= __("label-json") $></h3>
-            <pre class="base--pre language-javascript output--json-pre"><code class="base--code language-javascript output--json-code code--json"></code></pre>
-          </div>
-          <p class="base--p output--more-science">
-            <$= __("label-whatelse") $>
-              <br>
-              <a class="base--a" onclick="postSunburstRequest()" href="javascript:void(0);">
-                <$= __("button-sunburst") $>
-              </a>.
-              <br>
-              <a class="base--a" href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/science.shtml" target="_blank">
-                <$= __("button-science") $>
-              </a>.
-          </p>
         </div>
       </div>
     </div>
